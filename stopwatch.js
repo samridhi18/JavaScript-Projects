@@ -32,10 +32,9 @@ function Stopwatch(elem) {
     function timeFormatter(time) {
         time = new Date(time);
 
-        time.setMinutes(time.getMinutes()-30);
-        
-       // var hours = time.getHours();
+        time.setMinutes(0);
         var minutes = time.getMinutes().toString();
+        console.log(minutes);
         var seconds = time.getSeconds().toString();
         var milliseconds = time.getMilliseconds().toString();
         if (minutes.length < 2) {
