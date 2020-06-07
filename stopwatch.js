@@ -23,7 +23,7 @@ function Stopwatch(elem) {
     function delta() {
         var now = Date.now();
         var timePassed = now - offset;
-
+        //console.log(timePassed);
         offset = now;
 
         return timePassed;
@@ -32,10 +32,11 @@ function Stopwatch(elem) {
     function timeFormatter(time) {
         time = new Date(time);
 
+        time.setMinutes(0);
         var minutes = time.getMinutes().toString();
+        console.log(minutes);
         var seconds = time.getSeconds().toString();
         var milliseconds = time.getMilliseconds().toString();
-
         if (minutes.length < 2) {
             minutes = '0' + minutes;
         }
@@ -56,6 +57,7 @@ function Stopwatch(elem) {
     this.start = function () {
         interval = setInterval(update.bind(this), 1);
         offset = Date.now();
+        //console.log(offset)
         this.isOn = true;
     };
 
