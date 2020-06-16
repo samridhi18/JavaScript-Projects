@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html,body {
+    padding: 0;
+    margin: 0;
+}
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+.main__container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currency__converter {
+    width: 40%;
+    border: 1px solid rgba(0,0,0,0.1);
+    height: 80%;
+    background-color: rgb(237,237,237,0.6);
+    box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.6);
+}
+
+.cc__heading {
+    text-align: center;
+}
+
+.input__container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.currency__input {
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+.conversion__arrow {
+    width: 30px;
+}
+
+.countries__holder {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.countries__holder > button {
+    flex: 1 0 40%;
+    margin: 10px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: rgba(255,255,255,1);
+}
+
+.countries__holder button:nth-child(3n) {
+    background-color: rgba(82, 22, 122,0.8);
+}
+.countries__holder button:nth-child(3n):hover {
+    background-color: rgba(82, 22, 122,1);
+}
+
+.countries__holder button:nth-child(3n+1) {
+    background-color: rgba(88, 38, 15, 0.8);
+}
+.countries__holder button:nth-child(3n+1):hover {
+    background-color: rgba(88, 38, 15, 1);
+}
+
+.countries__holder button:nth-child(3n+2) {
+    background-color: rgba(146, 144, 0, 0.8);
+}
+.countries__holder button:nth-child(3n+2):hover {
+    background-color: rgba(146, 144, 0, 1);
+}
+
+@media (max-width:576px)
+{
+    body
+    {
+      background:rgba(255, 255, 255, 0.8);
+      background:#ededed;
+    }
+    .currency__converter
+    {
+      background: #ededed;
+      width:100%;
+	   overflow-y: scroll;
+}
+ .currency__input{
+        width:100px;
+    }
+    
+    
+}

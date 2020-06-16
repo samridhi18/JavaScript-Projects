@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main__container">
+        <div class="currency__converter">
+            <h1 class="cc__heading">Currency Converter</h1>
+            <div class="input__container">
+                <input 
+                    id="usdvalue"
+                    type="number" 
+                    class="currency__input" 
+                    placeholder="Input money in Us Dollar"
+                    value="100"
+                >
+                <img src="./images/right.svg" alt="arrow" class="conversion__arrow">
+                <input id="result" type="text" class="currency__input" placeholder="Result" disabled>
+            </div>
+            <div class="countries__holder" id="currency__buttons">
+                <button data-currencyid="JPY">Japanese yen</button>
+                <button data-currencyid="INR">Indian Rupee</button>
+                
+                <button data-currencyid="BDT">Bangladeshi taka</button>
+                <button data-currencyid="CNY">Chinese renminbi</button>
+
+                <button data-currencyid="GBP">British pound</button>
+                <button data-currencyid="SGD">Singapore dollar</button>
+
+                <button data-currencyid="THB">Thai baht</button>
+                <button data-currencyid="AED">UAE dirham</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,84 @@
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url('images/todolist.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.strikeOut {
+    text-decoration: line-through;
+}
+
+
+
+.todolist{
+    width: 40%;
+    height: 60vh;
+    background-color: #ededed;
+    padding: 40px;
+    overflow-y: scroll;
+}
+
+#todo {
+    width: 60%;
+    height: 30px;
+    font-size: 25px;
+    margin-right: 30px;
+    padding: 20px;
+}
+
+.submitButton {
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+	background-image: url('images/plus.svg');
+}
+
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul {
+    list-style: none;
+    margin-top: 50px;
+}
+
+.mytodo {
+    background-color: #fff;
+    font-size: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin-left: -20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 90%;
+}
+@media (max-width:576px)
+{
+    body
+    {
+      background:rgba(255, 255, 255, 0.8);
+      background:#ededed;
+    }
+    .todolist
+    {
+      background: #ededed;
+      width:100%;
+    }
+    form
+    {
+      padding:15px 25px;
+    }
+}
