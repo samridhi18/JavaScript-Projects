@@ -10,3 +10,4 @@ Basic javaScript Projects
 ![alt text](https://github.com/samridhi18/JavaScript-Projects/blob/master/ss/tic-toe.png)
 ![alt text](https://github.com/samridhi18/JavaScript-Projects/blob/master/ss/todo.png)
 ![alt text](https://github.com/samridhi18/JavaScript-Projects/blob/master/ss/toggleform.png)
+![alt text](https://github.com/samridhi18/JavaScript-Projects/blob/master/ss/tipcalculator.png)
